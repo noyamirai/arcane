@@ -20,7 +20,7 @@ body {
     background-color: var(--background-color);
     overflow: hidden;
 
-    background-image: url("/background-image.jpg");
+    background-image: url("../images/background-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
     }
 }
 
-    .glasses {
+    .glass {
         position: absolute;
 
         left: 0;
@@ -78,13 +78,13 @@ body {
             .glass__item--top .image-container {
                 top: 0;
 
-                background-image: url("/glass-top-desktop.png");
+                background-image: url("../images/glass-top.png");
             }
 
             .glass__item--bottom .image-container {
                 bottom: 0;
 
-                background-image: url("/glass-bottom-desktop.png");
+                background-image: url("../images/glass-bottom.png");
             }
 
             .blurred-background {
@@ -170,15 +170,11 @@ body {
             }
 
             .progress-bar, .progress-text {
-                color: var(--text-color);            /* color: #9d9dbd; */
+                color: var(--text-color);
             }
 
             .progress-bar {
                 font-size: clamp(.6rem, 4vw, 1.5rem);
-                /* font-size: clamp(.375rem, 2vw, .75rem);
-
-                transform-origin: left center;
-                transform: scale(2); */
             }
 
             .progress-text {
