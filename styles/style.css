@@ -9,8 +9,12 @@
 
 body {
     position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
-    height: 100svh;
+    min-height: 100svh;
 
     font-family: "Titillium Web", monospace;
     font-weight: 700;
@@ -31,6 +35,12 @@ body {
         font-size: 1rem;
     }
 }
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
     .glass {
         position: absolute;
@@ -117,14 +127,14 @@ body {
             }
         }
 
-    main {
+    /* main {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
-    }
+    } */
 
-        .content {
+        main {
             position: relative;
             display: flex;
             flex-direction: column;
@@ -142,7 +152,7 @@ body {
         }
         
         @media (min-width: 768px) {
-            .content {
+            main {
                 margin-bottom: 3rem;
             }
         }
